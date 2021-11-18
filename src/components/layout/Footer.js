@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import  Brand  from "./Brand";
+import  Navbar from "./Navbar";
 export default function Footer() {
     return (
         <footer>
-            <Link to="/">Home</Link>
-            <Link to="/Contact">Contact</Link>
+            <Brand/>            
+            <Navbar/>
         </footer> 
     )
 }
