@@ -8,16 +8,17 @@
   text-decoration: none;
 }
 a{
-  color: white
+  color: black;
 }
 /* Google Fonts Roboto*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Set Basics*/
 #root{
-  background-color: gray;
-  color: black;
+  background-image: url(./img/Zig-Zag.svg);
+  background-size: cover;
   width: 100vw;
   height: 100vh;
+  color: black;
   /* Set Fonts */
   font-family: 'Roboto', sans-serif;
 }
@@ -27,39 +28,43 @@ a{
 header{
   width: 100%;
   top: 0;
-  background-color: rgb(6, 192, 0);
-  min-height: 100px;
+  background-color: rgb(8, 135, 167);
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+}
+header i{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
 }
 /* Temporary Footer */
 footer{
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: rgb(111, 7, 180);
+  background-color: rgb(61, 68, 70);
   min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
-.container{
-  width: auto;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  background-color: red;
 }
 .list{
   display: flex;
   flex-wrap: wrap;
 }
 .list li{
-  margin: 10px;
+  width: 70px;
+  height: 40px;  
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  background-color: lightgray;
+  border-radius: 4px;
 }
-.list a:hover{
-  color: black;
+.list li:hover{
+  background-color: #47bc78;
 }

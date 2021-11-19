@@ -1,0 +1,20 @@
+.container{
+    padding: 1em;
+    max-width: 80%;
+    max-height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+   /* background-color: rgba(17, 169, 230, 0.301); */
+  }
+.min_h{
+    min-height: 75%;
+}
+.start{
+    justify-content: flex-start;
+}
+.col{
+    flex-direction: column;
+    justify-content: flex-start;
+}

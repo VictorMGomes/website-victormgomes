@@ -11,7 +11,7 @@ function App() {
   return (
    <Router>
      <Header />
-     <Container className="container"> 
+     <Container className="container" customClass="min_h"> 
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />

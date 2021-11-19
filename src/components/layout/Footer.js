@@ -1,10 +1,8 @@
-import  Brand  from "./Brand";
-import  Navbar from "./Navbar";
+import Socials from "./Socials";
 export default function Footer() {
     return (
         <footer>
-            <Brand/>            
-            <Navbar/>
+            <Socials/>            
         </footer> 
     )
 }
