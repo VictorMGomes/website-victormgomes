@@ -5,17 +5,20 @@ import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import Container from "./components/layout/Container";
 
 function App() {
   return (
    <Router>
      <Header />
+     <Container className="container"> 
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
+    </Container>
     <Footer />
    </Router>
   );
