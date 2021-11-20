@@ -1,17 +1,11 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
-import PT from "./locales/pt.json";
-import EN from "./locales/en.json";
-
-const translations = {
-    pt: PT,
-    en: EN,
-}
+import translations from './locales';
 
 const i18nConfig = {
     resources: translations,  // resources são as nossas traduções
-    fallbackLng: 'en',     // fallbackLng é o idioma padrão caso o browser não consiga detectar sozinho
+    fallbackLng: 'en-US',     // fallbackLng é o idioma padrão caso o browser não consiga detectar sozinho
     defaultNS: 'translations' // defaultNS é o namespace padrão, podemos usar 'translations'
   }
 

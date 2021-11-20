@@ -1,9 +1,9 @@
 export default function Socials() {
     return (
         <nav>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-github"></i>
-            <i class="bi bi-envelope"></i>         
+            <i className="bi bi-linkedin"></i>
+            <i className="bi bi-github"></i>
+            <i className="bi bi-envelope"></i>         
         </nav>       
     )    
 }
