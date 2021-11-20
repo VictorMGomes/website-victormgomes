@@ -1,6 +1,8 @@
 {
     "translations": {
-        "home": "HOME",
-        "about": "ABOUT"
-    }
+        "1": "HOME",
+        "2": "ABOUT",
+        "3": "PROJECTS",
+        "4": "CONTACT"
+        }
 }

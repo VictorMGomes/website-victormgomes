@@ -7,10 +7,10 @@ function Navbar(){
     return (
     <nav>
         <ul className="list">
-            <li> <Link to="/">{t('home')}</Link> </li>
-            <li> <Link to="/about">{t('about')}</Link> </li>
-            <li> <Link to="/projects">Projects</Link> </li>
-            <li> <Link to="/contact">Contact</Link> </li>
+            <li> <Link to="/">{t('1')}</Link> </li>
+            <li> <Link to="/about">{t('2')}</Link> </li>
+            <li> <Link to="/projects">{t('3')}</Link> </li>
+            <li> <Link to="/contact">{t('4')}</Link> </li>
         </ul>
     </nav> 
     )

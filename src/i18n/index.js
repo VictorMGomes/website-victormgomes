@@ -6,12 +6,12 @@ import EN from "./locales/en.json";
 
 const translations = {
     pt: PT,
-    en: EN
+    en: EN,
 }
 
 const i18nConfig = {
     resources: translations,  // resources são as nossas traduções
-    fallbackLng: 'pt',     // fallbackLng é o idioma padrão caso o browser não consiga detectar sozinho
+    fallbackLng: 'en',     // fallbackLng é o idioma padrão caso o browser não consiga detectar sozinho
     defaultNS: 'translations' // defaultNS é o namespace padrão, podemos usar 'translations'
   }
 

@@ -56,7 +56,7 @@ footer{
   flex-wrap: wrap;
 }
 .list li{
-  width: 70px;
+  width: 80px;
   height: 40px;  
   display: flex; 
   align-items: center;
@@ -64,6 +64,7 @@ footer{
   margin: 1em;
   background-color: lightgray;
   border-radius: 4px;
+  font-size: smaller;
 }
 .list li:hover{
   background-color: #47bc78;
