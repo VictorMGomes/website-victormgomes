@@ -1,16 +1,16 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import '../../i18n';
+import Abutton from "./Abutton";
 
 function Navbar(){
     const {t} = useTranslation();
     return (
     <nav>
         <ul className="list">
-            <li> <Link to="/">{t('1')}</Link> </li>
-            <li> <Link to="/about">{t('2')}</Link> </li>
-            <li> <Link to="/projects">{t('3')}</Link> </li>
-            <li> <Link to="/contact">{t('4')}</Link> </li>
+            <Abutton toref="/" tlang={t('1')}/>
+            <Abutton toref="/about" tlang={t('2')}/>
+            <Abutton toref="/projects" tlang={t('3')}/>
+            <Abutton toref="/contact" tlang={t('4')}/>
         </ul>
     </nav> 
     )
