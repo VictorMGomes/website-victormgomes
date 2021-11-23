@@ -1,12 +1,10 @@
 .container{
-    padding: 1em;
-    max-width: 80%;
-    max-height: 60%;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
+   /* background-color: red; */
     margin: 0 auto;
-    flex-wrap: wrap;
-   /* background-color: rgba(17, 169, 230, 0.301); */
+    padding-top: 100px;
   }
 .min_h{
     min-height: 75%;

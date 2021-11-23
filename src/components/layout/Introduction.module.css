@@ -1,25 +1,30 @@
-.intro{
+.introduction{
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.introduction_call{
+    display: flex;
     flex-direction: column;
-    color: white;
-    background-color: rgba(219, 183, 183, 0.609);
-    padding: 1em;
-    width: max-content;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
 }
-.intro_img {
-    height: 150px;
-    border-radius: 100%;
-    border: solid;
-    border-color: rgb(8, 135, 167);
+.introduction_content{
+    margin: 1em; 
+    display: flex; 
+    flex-direction: column; 
 }
-h1{
+.img{
+    width: 350px;
+}
+.img_desc{
     margin-top: 1em;
     font-weight: bold;
-    color: #0271b1;
+    color: #3f3d56;
 }
-p{
-    margin-top: 1em; 
-    font-weight: bolder;   
+.introduction p{
+    margin-top: 0.5em;
+    font-weight: 500;
+}
+.introduction span{
+    color: rgb(136, 4, 224);
 }

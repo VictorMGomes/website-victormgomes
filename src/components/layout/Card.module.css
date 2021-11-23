@@ -1,0 +1,11 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    color: white;
+    background-color: rgba(219, 183, 183, 0.609);
+    padding: 1em;
+    max-width: max-content;
+    margin-top: 1em;
+}

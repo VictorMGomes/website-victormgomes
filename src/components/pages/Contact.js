@@ -1,7 +1,10 @@
+import PageTitle from "../layout/PageTitle";
+import Translator from "../i18n/Translator";
+
 export default function Contact() {
     return(
         <main>
-            <h1>Contact</h1>
+            <PageTitle content={<Translator path="19"/>}/>   
         </main>        
     )    
 }

@@ -1,0 +1,14 @@
+.pagetitle {
+	background-color: lightgray;
+	height: 40px;
+	min-width: 100%;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.pagetitle h1{
+	color: rgb(8, 135, 167);
+	text-decoration: underline 2px #3ea96d;
+}

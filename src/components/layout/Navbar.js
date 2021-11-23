@@ -1,10 +1,11 @@
+import styles from "./Navbar.module.css";
 import Abutton from "./Abutton";
 import Translator from "../i18n/Translator";
 
 function Navbar(){
     return (
     <nav>
-        <ul className="list">
+        <ul className={styles.list}>
             <Abutton toref="/" tlang={<Translator path="1"/>}/>
             <Abutton toref="/about" tlang={<Translator path="2"/>}/>
             <Abutton toref="/projects" tlang={<Translator path="3"/>}/>
