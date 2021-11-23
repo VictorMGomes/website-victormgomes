@@ -4,8 +4,8 @@
   
   .flag {
     cursor: pointer;
-    width: 40px;
-    margin: 10px;
+    width: 2em;
+    margin: 1em;
     filter: grayscale(1);
   }
   

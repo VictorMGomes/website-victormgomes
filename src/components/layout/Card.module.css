@@ -9,3 +9,7 @@
     max-width: max-content;
     margin-top: 1em;
 }
+.full_width{
+    max-width: none;
+    width: 100vw;
+}
