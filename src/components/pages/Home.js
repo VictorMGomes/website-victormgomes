@@ -5,6 +5,7 @@ export default function Home() {
     return(
         <main>
             <Card id="person-card" content={<Person/>} customClass="full_width"/>
+            <Card id="person-card"  customClass="full_width"/>
         </main>
     )    
 }

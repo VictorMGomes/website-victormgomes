@@ -1,10 +1,10 @@
 .container{
     width: 90%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
    /* background-color: red; */
-    margin: 0 auto;
-    padding-top: 100px;
+    margin: 1em auto;
+    padding: 1em;
   }
 .min_h{
     min-height: 75%;
