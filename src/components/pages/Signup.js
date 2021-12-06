@@ -9,13 +9,21 @@ export default function Signup() {
     const [userEmail, setUserEmail] = useState();
     const [userPassword, setUserPassword] = useState();
         
-    const submitSignUp = (e) => {
+    const submitSignUp = async (e) => {
         e.preventDefault();
-        console.log({
-            userName,
-            userEmail,
-            userPassword         
+        
+        const response = await fetch ('http://localhost:5000/users', {
+            method: "POST",
+            headers: { 'Content-type': 'application/json'},
+            body: JSON.stringify({
+                userName,
+                userEmail,
+                userPassword         
+            })
         })
+
+        const content = await response.json();
+        console.log(content)
     }
 
     return (
