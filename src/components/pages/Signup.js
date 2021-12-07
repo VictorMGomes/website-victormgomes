@@ -5,16 +5,17 @@ import { useState } from "react";
 //import Translator from "../i18n/Translator";
 
 export default function Signup() {
-    const [userName, setUserName] = useState();
-    const [userEmail, setUserEmail] = useState();
-    const [userPassword, setUserPassword] = useState();
+    const [userName, setUserName] = useState(String);
+    const [userEmail, setUserEmail] = useState(String);
+    const [userPassword, setUserPassword] = useState(String);
         
     const submitSignUp = async (e) => {
         e.preventDefault();
         
-        const response = await fetch ('http://localhost:5000/users', {
+        const response = await fetch('http://localhost:3005/users', {
             method: "POST",
             headers: { 'Content-type': 'application/json'},
+            mode: 'cors',
             body: JSON.stringify({
                 userName,
                 userEmail,
@@ -30,11 +31,11 @@ export default function Signup() {
         <div>
             <PageTitle content="Sign Up"/>            
             <Form onSubmit={submitSignUp}>                
-                <Input type="text" placeholder={ "Type a username" } 
+                <Input required="required" type="text" placeholder={ "Type a username" } 
                     onChange={(e) => setUserName(e.target.value)} />
-                <Input type="email" placeholder={ "Type your email" } 
+                <Input required="required" type="email" placeholder={ "Type your email" } 
                     onChange={(e) => setUserEmail(e.target.value)} />
-                <Input type="password" placeholder={ "Type a password" } 
+                <Input required="required" type="password" placeholder={ "Type a password" } 
                     onChange={(e) => setUserPassword(e.target.value)} />
                 <Input type="submit" value={"Sign Up"} />                      
             </Form>         

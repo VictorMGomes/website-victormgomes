@@ -5,7 +5,8 @@ export default function Input(props) {
                 id={props.id}
                 value={props.value}
                 placeholder={props.placeholder} 
-                onChange={props.onChange}                               
+                onChange={props.onChange}  
+                required={props.required}                             
             />
     )
 }
