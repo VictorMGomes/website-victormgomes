@@ -13,7 +13,16 @@
     margin: 0.5em;
     height: 40px;
     border-radius: 0.5em;
+    border: none;
+    padding: 0.5em;
 }
+.form input:hover{
+    border: solid rgb(8, 135, 167) 0.5px;
+}
+.form input:butt{
+    border: solid rgb(8, 135, 167) 0.5px;
+}
+
 .form input::placeholder{
     text-align: center;
 }

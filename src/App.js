@@ -7,6 +7,8 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Container from "./components/layout/Container";
 import Signup from "./components/pages/Signup";
+import SignIn from "./components/pages/SignIn";
+import Dashboard from "./components/pages/Dashboard";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
     </Container>
     <Footer />
