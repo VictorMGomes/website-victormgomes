@@ -23,6 +23,7 @@ function SignIn() {
 
         const content = await response.json();
         document.cookie=`${"auth-token"}=${content.token}`;
+        console.log(response)
         console.log(content)
     }
 
