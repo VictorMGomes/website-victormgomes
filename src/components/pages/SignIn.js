@@ -22,9 +22,9 @@ function SignIn() {
         })
 
         const content = await response.json();
-        document.cookie=`${"auth-token"}=${content.token}`;
+        document.cookie=`${"auth-token"}=${content.authtoken}`;
         console.log(response)
-        console.log(content)
+        console.log(content.authtoken)
     }
 
     return (
